@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: #585989;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+.heading {
+  color: #070439;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+.text {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+.container {
+  width: 87%;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.header__nav-link:link, .header__nav-link:visited {
+  color: #585989;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.header {
+  margin: 2.5rem 0 9.5rem 0;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 8rem;
+}
+
+.intro {
+  margin-bottom: 5rem;
+}
+.intro__img {
+  margin-bottom: 4rem;
+  padding: 0 1.2rem;
+}
+.intro__text {
+  color: #070439;
+}
+
+.footer__attribution-link:link, .footer__attribution-link:visited {
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.intro__form {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+.intro__input {
+  width: 100%;
+  border: 0.1rem solid #585989;
+  border-radius: 0.3rem;
+  padding: 0.8rem 2rem;
+}
+.intro__input:focus-visible {
+  outline: 0.1rem solid #585989;
+}
+.intro__input::placeholder {
+  color: #bfbfbf;
+  font-size: 1.2rem;
+}
+.intro__input.input--has-error:focus-visible {
+  outline: 0.1rem solid #e9a0b2;
+}
+.intro__error {
+  color: #e9a0b2;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  align-self: flex-start;
+}
+
+.btn {
+  width: 100%;
+  color: #f6f6fe;
+  background-color: #3065f8;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding: 1.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

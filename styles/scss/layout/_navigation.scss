@@ -3,12 +3,21 @@
 .header {
   &__nav {
     &-list {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
     }
 
     &-item {
     }
 
     &-link {
+      &:link,
+      &:visited {
+        color: $color-primary--light;
+        font-size: 1.2rem;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -22,6 +31,9 @@
     }
 
     &-link {
+      &:link,
+      &:visited {
+      }
     }
   }
 }

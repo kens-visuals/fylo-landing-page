@@ -1,9 +1,17 @@
 @use '../abstracts/index.scss' as *;
 
 .intro {
+  margin-bottom: 5rem;
+
   &__img {
+    margin-bottom: 4rem;
+    padding: 0 1.2rem;
   }
 
   &__content {
+  }
+
+  &__text {
+    color: $color-primary;
   }
 }

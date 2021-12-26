@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="styles/css/style.css" />
@@ -23,21 +23,22 @@
   <body>
     <header class="header">
       <div class="container">
-        <img src="./images/logo.svg" alt="Fylo" class="header__logo" />
-
-        <nav class="header__nav" aria-label="header">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Features</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Team</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Sign In</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__wrapper">
+          <img src="./images/logo.svg" alt="Fylo" class="header__logo" />
+          <nav class="header__nav" aria-label="header">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Features</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Team</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Sign In</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -50,31 +51,31 @@
             aria-hidden="true"
             class="intro__img"
           />
-        </div>
 
-        <div class="intro__content">
-          <h1 class="heading">
-            All your files in one secure location, accessible anywhere.
-          </h1>
+          <div class="intro__content">
+            <h1 class="heading">
+              All your files in one secure location, accessible anywhere.
+            </h1>
 
-          <p class="text">
-            Fylo stores your most important files in one secure location. Access
-            them wherever you need, share and collaborate with friends, family,
-            and co-workers.
-          </p>
+            <p class="intro__text text">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
 
-          <form action="#" class="intro__form">
-            <div class="intro__form-wrapper">
-              <input
-                type="text"
-                class="intro__input"
-                name="email"
-                placeholder="Enter your email..."
-              />
-              <p class="intro__error">Error</p>
-            </div>
-            <button type="submit" class="btn">Get Started</button>
-          </form>
+            <form action="#" class="intro__form">
+              <div class="intro__form-wrapper">
+                <input
+                  type="text"
+                  class="intro__input"
+                  name="email"
+                  placeholder="Enter your email..."
+                />
+                <p class="intro__error"></p>
+              </div>
+              <button type="submit" class="btn">Get Started</button>
+            </form>
+          </div>
         </div>
       </section>
 

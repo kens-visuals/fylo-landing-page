@@ -1,6 +1,13 @@
 @use '../abstracts/index.scss' as *;
 
 .heading {
+  color: $color-primary;
+  font-family: $font-primary;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+
   &--secondary {
   }
 
@@ -9,4 +16,8 @@
 }
 
 .text {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 1rem;
 }

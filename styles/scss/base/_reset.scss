@@ -8,6 +8,11 @@
   box-sizing: inherit;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 img,
 picture {
   max-width: 100%;
@@ -43,6 +48,7 @@ html {
 
 body {
   min-height: 100vh;
+  color: $color-primary--light;
   font-size: 1.6rem;
   font-family: $font-primary;
   text-rendering: optimizeSpeed;

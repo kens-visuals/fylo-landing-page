@@ -1,6 +1,15 @@
 @use '../abstracts/index.scss' as *;
 
 .header {
+  margin: 2.5rem 0 9.5rem 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__logo {
+    width: 8rem;
   }
 }

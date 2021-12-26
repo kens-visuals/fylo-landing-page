@@ -1,4 +1,14 @@
 @use '../abstracts/index.scss' as *;
 
 .btn {
+  width: 100%;
+  color: $color-secondary;
+  background-color: $color-blue;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-family: $font-secondary;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding: 1.2rem;
 }
