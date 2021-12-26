@@ -21,19 +21,249 @@
     <title>Frontend Mentor | Fylo Landing Page with Two Column Layout</title>
   </head>
   <body>
-    Features Team Sign In All your files in one secure location, accessible
-    anywhere. Fylo stores your most important files in one secure location.
-    Access them wherever you need, share and collaborate with friends, family,
-    and co-workers. Get Started Stay productive, wherever you are Never let
-    location be an issue when accessing your files. Fylo has you covered for all
-    of your file storage needs. Securely share files and folders with friends,
-    family and colleagues for live collaboration. No email attachments required!
-    See how Fylo works Fylo has improved our team productivity by an order of
-    magnitude. Since making the switch our team has become a well-oiled
-    collaboration machine. Kyle Burton Founder & CEO, Huddle Get early access
-    today It only takes a minute to sign up and our free starter tier is
-    extremely generous. If you have any questions, our support team would be
-    happy to help you. Get Started For Free Phone: +1-543-123-4567
-    example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy
+    <header class="header">
+      <div class="container">
+        <img src="./images/logo.svg" alt="Fylo" class="header__logo" />
+
+        <nav class="header__nav" aria-label="header">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Features</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Team</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="intro">
+        <div class="container">
+          <img
+            src="./images/illustration-1.svg"
+            alt=""
+            aria-hidden="true"
+            class="intro__img"
+          />
+        </div>
+
+        <div class="intro__content">
+          <h1 class="heading">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+
+          <p class="text">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+
+          <form action="#" class="intro__form">
+            <div class="intro__form-wrapper">
+              <input
+                type="text"
+                class="intro__input"
+                name="email"
+                placeholder="Enter your email..."
+              />
+              <p class="intro__error">Error</p>
+            </div>
+            <button type="submit" class="btn">Get Started</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="productive">
+        <div class="container">
+          <img
+            src="./images/illustration-2.svg"
+            alt=""
+            aria-hidden="true"
+            class="productive__img"
+          />
+
+          <div class="productive__content">
+            <h2 class="heading heading--secondary">
+              Stay productive, wherever you are
+            </h2>
+
+            <p class="text">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="text">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+
+            <a href="#" class="productive__link">See how Fylo works</a>
+
+            <div class="productive__block">
+              <blockquote class="productive__quote">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </blockquote>
+
+              <div class="productive__user">
+                <img src="./images/avatar-testimonial.jpg" alt="Kyle Burton" />
+
+                <div class="productive__user-info">
+                  <span class="productive__user-name">Kyle Burton</span>
+                  <span class="productive__user-status">
+                    Founder & CEO, Huddle
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="access">
+        <div class="container">
+          <h3 class="heading heading--tertiary">Get early access today</h3>
+
+          <p class="text">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+
+          <form action="#" class="access__form">
+            <div class="access__form-wrapper">
+              <input
+                type="text"
+                class="access__input"
+                name="email"
+                placeholder="email@example.com"
+              />
+              <p class="access__error">Error</p>
+            </div>
+            <button type="submit" class="btn">Get Started For Free</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img src="./images/logo.svg" alt="Fylo" class="footer__logo" />
+
+        <ul class="footer__info-list">
+          <li class="footer__info-item footer__info-item--phone">
+            Phone: +1-543-123-4567
+          </li>
+          <li class="footer__info-item footer__info-item--email">
+            example@fylo.com
+          </li>
+        </ul>
+
+        <nav class="footer__nav" aria-label="footer">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">About Us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Jobs</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Press</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link footer__nav-link--bottom">
+                Blog
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Contact Us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Terms</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="facebook">
+              <svg
+                width="24"
+                height="20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                class="footer__social-icon"
+              >
+                <path
+                  d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="twitter">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                class="footer__social-icon"
+              >
+                <path
+                  d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="instagram">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                class="footer__social-icon"
+              >
+                <path
+                  d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+                ></path>
+                <path
+                  d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+                ></path>
+                <path
+                  d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__attribution">
+          Challenge by
+          <a
+            class="footer__attribution-link"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            class="footer__attribution-link"
+            href="https://github.com/kens-visuals"
+            target="_blank"
+            >Kens-Visuals</a
+          >.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
