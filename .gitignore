@@ -1,0 +1,11 @@
+# Avoid accidental Sketch file upload 
+*.sketch
+
+# Avoid accidental XD or Figma upload if you convert the design file
+*.xd
+*.fig
+
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
+node_modules/
+.vscode/
