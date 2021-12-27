@@ -1,26 +1,96 @@
 @use '../abstracts/index.scss' as *;
 
 .productive {
+  background-color: $color-secondary;
+  padding: 4rem 0 8rem 0;
+  position: relative;
+
+  &::before {
+    content: url('../../../images/bg-curve-mobile.svg');
+    width: 100%;
+    position: absolute;
+    top: -5rem;
+  }
+
   &__img {
+    margin-bottom: 8rem;
+    padding: 0 0.5rem;
   }
 
   &__content {
   }
 
+  &__text {
+    text-align: left;
+    padding: 0;
+
+    &:first-of-type {
+      margin-bottom: 1.5rem;
+    }
+  }
+
   &__link {
+    &:link,
+    &:visited {
+      width: max-content;
+      color: $color-cyan;
+      font-size: 1.2rem;
+      border-bottom: 0.1rem solid $color-cyan;
+      text-decoration: none;
+      margin: 4rem auto;
+      padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+    }
+  }
+
+  &__block {
+    background-color: $color-white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px -3px rgba($color-primary, 0.2);
+    margin: 0 2.5rem;
+    padding: 2.2rem 1.2rem 2.2rem 2.4rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__icon {
+    width: 1rem;
   }
 
   &__quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
 
   &__user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-img {
+      width: 2.5rem;
+      border-radius: 50%;
+    }
+
     &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
     }
 
     &-name {
+      color: $color-primary;
+      font-size: 1rem;
+      font-weight: 700;
     }
 
     &-status {
+      font-size: 0.7rem;
     }
   }
 }

@@ -1,56 +1,92 @@
 @use '../abstracts/index.scss' as *;
 
+.form {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 0 1rem;
+
+  &-wrapper {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+  }
+}
+
+.input {
+  width: 100%;
+  border: 0.1rem solid $color-primary--light;
+  border-radius: 0.3rem;
+  padding: 0.8rem 2rem;
+
+  &:focus-visible {
+    outline: 0.1rem solid $color-primary--light;
+  }
+
+  &::placeholder {
+    color: $color-secondary--light;
+    font-size: 1.2rem;
+  }
+
+  &.input--has-error {
+    &:focus-visible {
+      outline: 0.1rem solid $color-red;
+    }
+  }
+}
+
+.error {
+  color: $color-red;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  align-self: flex-start;
+}
+
 .intro {
   &__form {
-    width: 100%;
-    margin-top: 3rem;
-    padding: 0 1rem;
-
     &-wrapper {
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-      // flex-direction: column;
     }
   }
 
   &__input {
-    width: 100%;
-    border: 0.1rem solid $color-primary--light;
-    border-radius: 0.3rem;
-    padding: 0.8rem 2rem;
-
     &:focus-visible {
-      outline: 0.1rem solid $color-primary--light;
     }
 
     &::placeholder {
-      color: $color-secondary--light;
-      font-size: 1.2rem;
     }
 
     &.input--has-error {
       &:focus-visible {
-        outline: 0.1rem solid $color-red;
       }
     }
   }
 
   &__error {
-    color: $color-red;
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    align-self: flex-start;
   }
 }
 
 .access {
   &__form {
+    width: 80%;
+    margin: 2rem auto 0 auto;
+
     &-wrapper {
     }
   }
 
   &__input {
+    padding: 0.5rem 1rem;
+
+    &:focus-visible {
+    }
+
+    &::placeholder {
+    }
+
+    &.input--has-error {
+      &:focus-visible {
+      }
+    }
   }
 
   &__error {

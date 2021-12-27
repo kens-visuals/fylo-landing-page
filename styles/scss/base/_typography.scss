@@ -2,16 +2,18 @@
 
 .heading {
   color: $color-primary;
-  font-family: $font-primary;
+  font-family: $font-secondary;
   font-weight: 700;
   text-align: center;
   line-height: 1.5;
   margin-bottom: 2.5rem;
 
   &--secondary {
+    font-size: 1.55rem;
   }
 
   &--tertiary {
+    margin-bottom: 1.5rem;
   }
 }
 

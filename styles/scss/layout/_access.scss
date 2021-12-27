@@ -1,4 +1,14 @@
 @use '../abstracts/index.scss' as *;
 
 .access {
+  background-color: $color-primary--light;
+  padding: 5rem 0 7rem 0;
+
+  &__heading {
+    color: $color-secondary;
+  }
+
+  &__text {
+    color: $color-secondary;
+  }
 }
