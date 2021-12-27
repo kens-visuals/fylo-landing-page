@@ -190,19 +190,106 @@ body {
 
 .access {
   background-color: #585989;
-  padding: 5rem 0 7rem 0;
+  padding: 5rem 0 6rem 0;
 }
 .access__heading {
   color: #f6f6fe;
 }
 .access__text {
   color: #f6f6fe;
+  padding: 0 2rem;
 }
 
-.footer__attribution-link:link, .footer__attribution-link:visited {
-  text-transform: uppercase;
+.footer {
+  color: #f6f6fe;
+  background-color: #070439;
+  padding: 7rem 2rem 3rem 2rem;
+}
+.footer__logo {
+  width: 17rem;
+  margin-bottom: 4rem;
+  filter: brightness(0) invert(1);
+}
+.footer__info-list {
+  margin-bottom: 5rem;
+}
+.footer__info-item {
+  width: max-content;
+  max-width: 30rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.footer__info-item--phone::before {
+  content: url("./../../images/icon-phone.svg");
+}
+.footer__info-item--email::before {
+  content: url("./../../images/icon-email.svg");
+}
+.footer__nav-list {
+  margin-bottom: 4rem;
+}
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.footer__nav-item:nth-of-type(4) {
+  margin-bottom: 5rem;
+}
+.footer__nav-link:link, .footer__nav-link:visited {
+  color: #f6f6fe;
+  text-decoration: none;
   transition: all 0.3s;
 }
+.footer__nav-link:hover, .footer__nav-link:active {
+  color: #bfbfbf;
+}
+.footer__social-list {
+  padding: 0 1rem;
+  margin: 4rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.footer__social-item {
+  border: 0.1rem solid white;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.footer__social-item:hover {
+  cursor: pointer;
+  border: 0.1rem solid #bfbfbf;
+}
+.footer__social-item:hover .footer__social-icon {
+  fill: #bfbfbf;
+}
+.footer__social-link {
+  width: 2.5rem;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social-icon {
+  width: 1.1rem;
+  fill: white;
+  transition: all 0.3s;
+}
+.footer__attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.footer__attribution-link:link, .footer__attribution-link:visited {
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s;
+}
+.footer__attribution-link:hover, .footer__attribution-link:active {
+  color: #bfbfbf;
+}
+
 .form {
   width: 100%;
   margin-top: 3rem;
@@ -245,6 +332,7 @@ body {
   background-color: #3065f8;
   border: 0;
   border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
   font-size: 1.4rem;
   font-family: "Raleway", sans-serif;
   font-weight: 700;

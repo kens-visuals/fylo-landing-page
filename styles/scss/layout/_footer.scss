@@ -1,43 +1,85 @@
 @use '../abstracts/index.scss' as *;
 
 .footer {
+  color: $color-secondary;
+  background-color: $color-primary;
+  padding: 7rem 2rem 3rem 2rem;
+
+  &__wrapper {
+  }
+
   &__logo {
+    width: 17rem;
+    margin-bottom: 4rem;
+    filter: brightness(0) invert(1);
   }
 
   &__info {
     &-list {
+      margin-bottom: 5rem;
     }
 
     &-item {
+      width: max-content;
+      max-width: 30rem;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+
       &--phone {
+        &::before {
+          content: url('./../../images/icon-phone.svg');
+        }
       }
 
       &--email {
+        &::before {
+          content: url('./../../images/icon-email.svg');
+        }
       }
     }
   }
 
   &__nav {
     &-list {
+      margin-bottom: 4rem;
     }
 
     &-item {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      &:nth-of-type(4) {
+        margin-bottom: 5rem;
+      }
     }
 
     &-link {
-      &--bottom {
+      &:link,
+      &:visited {
+        color: $color-secondary;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-secondary--light;
       }
     }
   }
 
   &__social {
     &-list {
-      // padding: 0 1rem;
-      // margin: 8rem 0 2rem 0;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-      // gap: 1.2rem;
+      padding: 0 1rem;
+      margin: 4rem 0 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
 
       // @media (min-width: 1140px) {
       //   margin: 0;
@@ -48,46 +90,49 @@
     }
 
     &-item {
-      // border: 0.1rem solid $color-secondary--light;
-      // border-radius: 50%;
-      // transition: all 0.3s;
+      border: 0.1rem solid $color-white;
+      border-radius: 50%;
+      transition: all 0.3s;
 
-      // &:hover {
-      //   cursor: pointer;
-      //   border: 0.1rem solid $color-cyan;
+      &:hover {
+        cursor: pointer;
+        border: 0.1rem solid $color-secondary--light;
 
-      //   .footer__social-icon {
-      //     fill: $color-cyan;
-      //   }
-      // }
+        .footer__social-icon {
+          fill: $color-secondary--light;
+        }
+      }
     }
 
     &-link {
-      // width: 2.5rem;
-      // aspect-ratio: 1;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
+      width: 2.5rem;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &-icon {
-      // width: 1.1rem;
-      // fill: $color-secondary--light;
-      // transition: all 0.3s;
+      width: 1.1rem;
+      fill: $color-white;
+      transition: all 0.3s;
     }
   }
 
   &__attribution {
+    font-size: 1rem;
+    text-align: center;
+
     &-link:link,
     &-link:visited {
       text-transform: uppercase;
-      // color: ;
+      color: $color-white;
       transition: all 0.3s;
     }
 
     &-link:hover,
     &-link:active {
-      // color: ;
+      color: $color-secondary--light;
     }
   }
 }
