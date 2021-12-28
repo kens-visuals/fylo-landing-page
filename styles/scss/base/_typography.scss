@@ -2,14 +2,15 @@
 
 .heading {
   color: $color-primary;
-  font-family: $font-secondary;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
+  font-family: $font-secondary;
   text-align: center;
   line-height: 1.5;
   margin-bottom: 2.5rem;
 
   &--secondary {
-    font-size: 1.55rem;
+    font-size: clamp(1.55rem, 6vw, 4rem);
   }
 
   &--tertiary {
@@ -18,7 +19,7 @@
 }
 
 .text {
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
   text-align: center;
   line-height: 1.5;
   padding: 0 1rem;

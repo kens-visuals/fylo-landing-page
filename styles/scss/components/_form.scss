@@ -44,7 +44,14 @@
 
 .intro {
   &__form {
+    @media (min-width: 810px) {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
     &-wrapper {
+      flex-grow: 1;
     }
   }
 
@@ -62,6 +69,9 @@
   }
 
   &__error {
+  }
+
+  &__btn {
   }
 }
 

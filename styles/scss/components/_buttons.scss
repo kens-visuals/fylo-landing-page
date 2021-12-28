@@ -16,4 +16,11 @@
   &:focus-visible {
     outline: 0.2rem solid $color-primary;
   }
+
+  &--intro {
+    @media (min-width: 810px) {
+      margin-top: 0;
+      flex-basis: 30%;
+    }
+  }
 }

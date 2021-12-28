@@ -3,6 +3,10 @@
 .header {
   margin: 2.5rem 0 9.5rem 0;
 
+  @media (min-width: 810px) {
+    margin: 6.5rem 0 9.5rem 0;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
@@ -11,5 +15,9 @@
 
   &__logo {
     width: 8rem;
+
+    @media (min-width: 810px) {
+      width: 15rem;
+    }
   }
 }

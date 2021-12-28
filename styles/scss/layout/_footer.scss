@@ -6,6 +6,10 @@
   padding: 7rem 2rem 3rem 2rem;
 
   &__wrapper {
+    @media (min-width: 810px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__logo {
@@ -42,36 +46,6 @@
     }
   }
 
-  &__nav {
-    &-list {
-      margin-bottom: 4rem;
-    }
-
-    &-item {
-      &:not(:last-child) {
-        margin-bottom: 1.5rem;
-      }
-
-      &:nth-of-type(4) {
-        margin-bottom: 5rem;
-      }
-    }
-
-    &-link {
-      &:link,
-      &:visited {
-        color: $color-secondary;
-        text-decoration: none;
-        transition: all 0.3s;
-      }
-
-      &:hover,
-      &:active {
-        color: $color-secondary--light;
-      }
-    }
-  }
-
   &__social {
     &-list {
       padding: 0 1rem;
@@ -81,12 +55,12 @@
       justify-content: center;
       gap: 1.2rem;
 
-      // @media (min-width: 1140px) {
-      //   margin: 0;
-      //   padding: 0;
-      //   align-items: flex-start;
-      //   justify-content: flex-start;
-      // }
+      @media (min-width: 810px) {
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
     }
 
     &-item {
@@ -122,6 +96,11 @@
   &__attribution {
     font-size: 1rem;
     text-align: center;
+
+    @media (min-width: 810px) {
+      text-align: left;
+      align-self: center;
+    }
 
     &-link:link,
     &-link:visited {

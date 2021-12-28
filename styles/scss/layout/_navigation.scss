@@ -15,7 +15,7 @@
       &:link,
       &:visited {
         color: $color-primary--light;
-        font-size: 1.2rem;
+        font-size: clamp(1.2rem, 4vw, 1.6rem);
         text-decoration: none;
       }
     }
@@ -25,14 +25,39 @@
 .footer {
   &__nav {
     &-list {
+      margin-bottom: 4rem;
+
+      @media (min-width: 810px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     &-item {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      &:nth-of-type(4) {
+        margin-bottom: 5rem;
+
+        @media (min-width: 810px) {
+          margin-bottom: 0;
+        }
+      }
     }
 
     &-link {
       &:link,
       &:visited {
+        color: $color-secondary;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-secondary--light;
       }
     }
   }
