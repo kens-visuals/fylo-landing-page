@@ -1,12 +1,16 @@
 @use '../abstracts/index.scss' as *;
 
 .productive {
-  background-color: $color-secondary;
+  background-color: rgba($color-secondary, 0.8);
   padding: 4rem 0 8rem 0;
   position: relative;
 
   @media (min-width: 810px) {
-    padding: 8rem 0 8rem 0;
+    padding: 8rem 0;
+  }
+
+  @media (min-width: 1140px) {
+    padding: 8rem 0 10rem 0;
   }
 
   &::before {
@@ -18,23 +22,36 @@
     @media (min-width: 810px) {
       content: url('../../../images/bg-curve-desktop.svg');
     }
+
+    @media (min-width: 1140px) {
+      top: -10rem;
+    }
   }
 
   &__img {
-    width: 60rem;
+    width: 55rem;
     margin: 0 auto 8rem auto;
     padding: 0 0.5rem;
+
+    @media (min-width: 1140px) {
+      margin: 0 auto 2rem auto;
+    }
   }
 
   &__content {
   }
 
   &__text {
+    max-width: 54rem;
     text-align: left;
     padding: 0;
 
     &:first-of-type {
       margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 1140px) {
+      font-size: 1.6rem;
     }
   }
 
@@ -57,7 +74,7 @@
     @media (min-width: 810px) {
       &:link,
       &:visited {
-        margin: 4rem 0;
+        margin: 2rem 0 4rem 0;
       }
     }
   }
@@ -70,6 +87,10 @@
     margin: 0 2.5rem;
     padding: 2.2rem 1.2rem 2.2rem 2.4rem;
 
+    @media (min-width: 1140px) {
+      padding: 3rem;
+    }
+
     & > *:not(:last-child) {
       margin-bottom: 1rem;
     }
@@ -80,7 +101,7 @@
   }
 
   &__icon {
-    width: 1rem;
+    width: clamp(1rem, 4vw, 1.5rem);
   }
 
   &__quote {
@@ -94,7 +115,7 @@
     gap: 1rem;
 
     &-img {
-      width: 2.5rem;
+      width: clamp(2.5rem, 4vw, 3rem);
       border-radius: 50%;
     }
 
@@ -106,12 +127,12 @@
 
     &-name {
       color: $color-primary;
-      font-size: 1rem;
+      font-size: clamp(1rem, 4vw, 1.2rem);
       font-weight: 700;
     }
 
     &-status {
-      font-size: 0.7rem;
+      font-size: clamp(0.7rem, 4vw, 0.9rem);
     }
   }
 }

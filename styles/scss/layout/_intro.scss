@@ -3,14 +3,8 @@
 .intro {
   margin-bottom: 15rem;
 
-  &__wrapper {
-    @media (min-width: 1140px) {
-      display: flex;
-      align-items: center;
-
-      flex-direction: row-reverse;
-      gap: 3rem;
-    }
+  @media (min-width: 1140px) {
+    margin-bottom: 25rem;
   }
 
   &__img {

@@ -68,6 +68,7 @@ body {
 }
 .heading--secondary {
   font-size: clamp(1.55rem, 6vw, 4rem);
+  margin-bottom: 3rem;
 }
 .heading--tertiary {
   margin-bottom: 1.5rem;
@@ -90,6 +91,16 @@ body {
   width: 89%;
   max-width: 130rem;
   margin: 0 auto;
+}
+
+@media (min-width: 1140px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 3rem;
+  }
 }
 
 .header__nav-list {
@@ -167,11 +178,8 @@ body {
   margin-bottom: 15rem;
 }
 @media (min-width: 1140px) {
-  .intro__wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 3rem;
+  .intro {
+    margin-bottom: 25rem;
   }
 }
 .intro__img {
@@ -194,13 +202,18 @@ body {
 }
 
 .productive {
-  background-color: #f6f6fe;
+  background-color: rgba(246, 246, 254, 0.8);
   padding: 4rem 0 8rem 0;
   position: relative;
 }
 @media (min-width: 810px) {
   .productive {
-    padding: 8rem 0 8rem 0;
+    padding: 8rem 0;
+  }
+}
+@media (min-width: 1140px) {
+  .productive {
+    padding: 8rem 0 10rem 0;
   }
 }
 .productive::before {
@@ -214,17 +227,33 @@ body {
     content: url("../../../images/bg-curve-desktop.svg");
   }
 }
+@media (min-width: 1140px) {
+  .productive::before {
+    top: -10rem;
+  }
+}
 .productive__img {
-  width: 60rem;
+  width: 55rem;
   margin: 0 auto 8rem auto;
   padding: 0 0.5rem;
 }
+@media (min-width: 1140px) {
+  .productive__img {
+    margin: 0 auto 2rem auto;
+  }
+}
 .productive__text {
+  max-width: 54rem;
   text-align: left;
   padding: 0;
 }
 .productive__text:first-of-type {
   margin-bottom: 1.5rem;
+}
+@media (min-width: 1140px) {
+  .productive__text {
+    font-size: 1.6rem;
+  }
 }
 .productive__link:link, .productive__link:visited {
   width: max-content;
@@ -241,7 +270,7 @@ body {
 }
 @media (min-width: 810px) {
   .productive__link:link, .productive__link:visited {
-    margin: 4rem 0;
+    margin: 2rem 0 4rem 0;
   }
 }
 .productive__block {
@@ -252,6 +281,11 @@ body {
   margin: 0 2.5rem;
   padding: 2.2rem 1.2rem 2.2rem 2.4rem;
 }
+@media (min-width: 1140px) {
+  .productive__block {
+    padding: 3rem;
+  }
+}
 .productive__block > *:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -261,7 +295,7 @@ body {
   }
 }
 .productive__icon {
-  width: 1rem;
+  width: clamp(1rem, 4vw, 1.5rem);
 }
 .productive__quote {
   font-size: clamp(1.1rem, 4vw, 1.4rem);
@@ -273,7 +307,7 @@ body {
   gap: 1rem;
 }
 .productive__user-img {
-  width: 2.5rem;
+  width: clamp(2.5rem, 4vw, 3rem);
   border-radius: 50%;
 }
 .productive__user-info {
@@ -283,11 +317,11 @@ body {
 }
 .productive__user-name {
   color: #070439;
-  font-size: 1rem;
+  font-size: clamp(1rem, 4vw, 1.2rem);
   font-weight: 700;
 }
 .productive__user-status {
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 4vw, 0.9rem);
 }
 
 .access {
