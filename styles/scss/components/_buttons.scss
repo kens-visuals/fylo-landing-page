@@ -23,4 +23,10 @@
       flex-basis: 35%;
     }
   }
+
+  &--access {
+    @media (min-width: 1140px) {
+      width: 40%;
+    }
+  }
 }

@@ -71,6 +71,7 @@ body {
   margin-bottom: 3rem;
 }
 .heading--tertiary {
+  font-size: clamp(1.55rem, 6vw, 3rem);
   margin-bottom: 1.5rem;
 }
 
@@ -328,12 +329,34 @@ body {
   background-color: #585989;
   padding: 5rem 0 6rem 0;
 }
+@media (min-width: 1140px) {
+  .access {
+    padding: 10rem 0;
+  }
+}
+.access__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1140px) {
+  .access__content {
+    flex-basis: 50%;
+  }
+}
 .access__heading {
   color: #f6f6fe;
 }
 .access__text {
+  max-width: 50rem;
   color: #f6f6fe;
   padding: 0 2rem;
+}
+@media (min-width: 1140px) {
+  .access__text {
+    padding: 0;
+    font-size: 1.6rem;
+  }
 }
 
 .footer {
@@ -478,8 +501,19 @@ body {
   width: 80%;
   margin: 2rem auto 0 auto;
 }
-.access__input {
-  padding: 0.5rem 1rem;
+@media (min-width: 1140px) {
+  .access__form {
+    margin: 0;
+    flex-basis: 40%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1140px) {
+  .access__form-wrapper {
+    width: 90%;
+  }
 }
 .btn {
   width: 100%;
@@ -501,6 +535,11 @@ body {
   .btn--intro {
     margin-top: 0;
     flex-basis: 35%;
+  }
+}
+@media (min-width: 1140px) {
+  .btn--access {
+    width: 40%;
   }
 }
 

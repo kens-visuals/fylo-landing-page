@@ -20,6 +20,7 @@
   }
 
   &--tertiary {
+    font-size: clamp(1.55rem, 6vw, 3rem);
     margin-bottom: 1.5rem;
   }
 }
