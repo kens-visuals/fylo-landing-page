@@ -26,8 +26,11 @@
 
   &--intro {
     @media (min-width: 810px) {
-      margin-top: 0;
       flex-basis: 35%;
+    }
+
+    @media (min-width: 1140px) {
+      margin-top: 0;
     }
   }
 
