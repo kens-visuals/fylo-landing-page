@@ -2,8 +2,12 @@
 
 .form {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 0 1rem;
+
+  @media (min-width: 1140px) {
+    padding: 0;
+  }
 
   &-wrapper {
     // display: flex;
@@ -17,7 +21,7 @@
   width: 100%;
   border: 0.1rem solid $color-primary--light;
   border-radius: 0.3rem;
-  padding: 0.8rem 2rem;
+  padding: 1rem 2rem;
 
   &:focus-visible {
     outline: 0.1rem solid $color-primary--light;
@@ -45,13 +49,14 @@
 .intro {
   &__form {
     @media (min-width: 810px) {
+      width: 95%;
       display: flex;
       align-items: flex-start;
-      gap: 2rem;
+      gap: 1.5rem;
     }
 
     &-wrapper {
-      flex-grow: 1;
+      flex-basis: 55%;
     }
   }
 

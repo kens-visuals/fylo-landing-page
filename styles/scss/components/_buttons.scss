@@ -11,7 +11,7 @@
   font-family: $font-secondary;
   font-weight: 700;
   margin-top: 1rem;
-  padding: 1.2rem;
+  padding: 1.4rem;
 
   &:focus-visible {
     outline: 0.2rem solid $color-primary;
@@ -20,7 +20,7 @@
   &--intro {
     @media (min-width: 810px) {
       margin-top: 0;
-      flex-basis: 30%;
+      flex-basis: 35%;
     }
   }
 }

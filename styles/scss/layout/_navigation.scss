@@ -6,6 +6,10 @@
       display: flex;
       align-items: center;
       gap: 2.5rem;
+
+      @media (min-width: 810px) {
+        gap: 5.5rem;
+      }
     }
 
     &-item {

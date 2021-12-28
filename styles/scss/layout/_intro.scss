@@ -3,13 +3,30 @@
 .intro {
   margin-bottom: 15rem;
 
+  &__wrapper {
+    @media (min-width: 1140px) {
+      display: flex;
+      align-items: center;
+
+      flex-direction: row-reverse;
+      gap: 3rem;
+    }
+  }
+
   &__img {
-    width: 60rem;
+    width: 65rem;
     margin: 0 auto 4rem auto;
     padding: 0 1.2rem;
+
+    @media (min-width: 1140px) {
+      margin: 0;
+    }
   }
 
   &__content {
+    @media (min-width: 1140px) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__text {
