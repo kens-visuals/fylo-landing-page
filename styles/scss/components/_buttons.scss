@@ -12,9 +12,16 @@
   font-weight: 700;
   margin-top: 1rem;
   padding: 1.4rem;
+  transition: all 0.3s;
 
   &:focus-visible {
-    outline: 0.2rem solid $color-primary;
+    outline: 0.2rem solid $color-cyan;
+  }
+
+  &:hover,
+  &:active {
+    background-color: rgba($color-blue, 0.7);
+    cursor: pointer;
   }
 
   &--intro {

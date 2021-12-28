@@ -10,17 +10,17 @@
   }
 
   @media (min-width: 1140px) {
-    padding: 8rem 0 10rem 0;
+    padding: 10rem 0;
   }
 
   &::before {
-    content: url('../../../images/bg-curve-mobile.svg');
+    content: url('./../../images/bg-curve-mobile.svg');
     width: 100%;
     position: absolute;
     top: -5rem;
 
     @media (min-width: 810px) {
-      content: url('../../../images/bg-curve-desktop.svg');
+      content: url('./../../images/bg-curve-desktop.svg');
     }
 
     @media (min-width: 1140px) {
@@ -33,12 +33,35 @@
     margin: 0 auto 8rem auto;
     padding: 0 0.5rem;
 
+    // NOTE:
+    // opacity: 0;
+    // visibility: hidden;
+    // transform: translateX(50%);
+    // transition: all 0.7s;
+
+    // &.is-visible {
+    //   opacity: 1;
+    //   visibility: visible;
+    //   transform: translateX(0);
+    // }
+
     @media (min-width: 1140px) {
       margin: 0 auto 2rem auto;
     }
   }
 
   &__content {
+    // NOTE:
+    // opacity: 0;
+    // visibility: hidden;
+    // transform: translateX(-50%);
+    // transition: all 0.7s;
+
+    // &.is-visible {
+    //   opacity: 1;
+    //   visibility: visible;
+    //   transform: translateX(0);
+    // }
   }
 
   &__text {
@@ -69,6 +92,13 @@
       align-items: center;
       justify-content: center;
       gap: 0.7rem;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      opacity: 0.6;
+      cursor: pointer;
     }
 
     @media (min-width: 810px) {

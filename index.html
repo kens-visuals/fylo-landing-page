@@ -18,6 +18,8 @@
     />
     <link rel="stylesheet" type="text/css" href="styles/css/style.css" />
 
+    <script defer src="js/script.js"></script>
+
     <title>Frontend Mentor | Fylo Landing Page with Two Column Layout</title>
   </head>
   <body>
@@ -50,10 +52,10 @@
               src="./images/illustration-1.svg"
               alt=""
               aria-hidden="true"
-              class="intro__img"
+              class="intro__img js-item"
             />
 
-            <div class="intro__content">
+            <div class="intro__content js-content">
               <h1 class="heading">
                 All your files in one secure location, accessible anywhere.
               </h1>
@@ -64,11 +66,11 @@
                 friends, family, and co-workers.
               </p>
 
-              <form action="#" class="intro__form form">
+              <form action="#" class="intro__form form js-form">
                 <div class="intro__form-wrapper form-wrapper">
                   <input
                     type="text"
-                    class="intro__input input"
+                    class="intro__input input js-input"
                     name="email"
                     placeholder="Enter your email..."
                   />
@@ -76,7 +78,7 @@
                   <p class="intro__error error"></p>
                 </div>
 
-                <button type="submit" class="btn btn--intro">
+                <button type="submit" class="btn btn--intro js-btn">
                   Get Started
                 </button>
               </form>
@@ -92,10 +94,10 @@
               src="./images/illustration-2.svg"
               alt=""
               aria-hidden="true"
-              class="productive__img"
+              class="productive__img js-item"
             />
 
-            <div class="productive__content">
+            <div class="productive__content js-content">
               <h2 class="heading heading--secondary">
                 Stay productive, wherever you are
               </h2>
@@ -156,7 +158,7 @@
 
       <section class="access">
         <div class="access__wrapper container">
-          <div class="access__content">
+          <div class="access__content js-content">
             <h3 class="access__heading heading heading--tertiary">
               Get early access today
             </h3>
@@ -168,18 +170,18 @@
             </p>
           </div>
 
-          <form action="#" class="access__form form">
+          <form action="#" class="access__form form js-form js-item">
             <div class="access__form-wrapper form-wrapper">
               <input
                 type="text"
-                class="access__input input"
+                class="access__input input js-input"
                 name="email"
                 placeholder="email@example.com"
               />
               <p class="access__error error"></p>
             </div>
 
-            <button type="submit" class="btn btn--access">
+            <button type="submit" class="btn btn--access js-btn">
               Get Started For Free
             </button>
           </form>

@@ -12,15 +12,18 @@
       }
     }
 
-    &-item {
-    }
-
     &-link {
       &:link,
       &:visited {
         color: $color-primary--light;
         font-size: clamp(1.2rem, 4vw, 1.6rem);
         text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-blue;
       }
     }
   }
@@ -62,7 +65,7 @@
 
       &:hover,
       &:active {
-        color: $color-secondary--light;
+        color: $color-blue;
       }
     }
   }

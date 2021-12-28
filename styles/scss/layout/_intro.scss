@@ -12,12 +12,36 @@
     margin: 0 auto 4rem auto;
     padding: 0 1.2rem;
 
+    // NOTE:
+    // opacity: 0;
+    // visibility: hidden;
+    // transform: translateX(50%);
+    // transition: all 0.7s;
+
+    // &.is-visible {
+    //   opacity: 1;
+    //   visibility: visible;
+    //   transform: translateX(0);
+    // }
+
     @media (min-width: 1140px) {
       margin: 0;
     }
   }
 
   &__content {
+    // NOTE:
+    // opacity: 0;
+    // visibility: hidden;
+    // transform: translateX(-50%);
+    // transition: all 0.7s;
+
+    // &.is-visible {
+    //   opacity: 1;
+    //   visibility: visible;
+    //   transform: translateX(0);
+    // }
+
     @media (min-width: 1140px) {
       margin-bottom: 4rem;
     }
