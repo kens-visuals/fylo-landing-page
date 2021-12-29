@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-This project brought me closer to the end of the **JUNIOR** level. There's only one project left and a couple of days till the end of the year. Which means that I'm so very close to achieving my goal of finishing every challenge in this JUNIOR level. Not a lot to say about this project, the only challenge I had was the pattern img, but it wasn't much of challenge at the end of the day. One more challenge and I can call it a year!
+This project brought me closer to the end of the **JUNIOR** level. There's only one project left and a couple of days till the end of the year. Which means that I'm so very close to achieving my goal of finishing every challenge in this JUNIOR level. Not a lot to say about this project, the only challenge I had was the pattern image, but it wasn't much of a challenge at the end of the day. One more challenge and I can call it a year!
 
 ## Author
 
