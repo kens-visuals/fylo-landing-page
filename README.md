@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://kens-visuals.github.io/fylo-landing-page/](https://kens-visuals.github.io/fylo-landing-page/)
-- Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Solution URL: [https://www.frontendmentor.io/solutions/fylo-landing-page-with-vanilla-js-scss-and-bem-j3_o-hMup](https://www.frontendmentor.io/solutions/fylo-landing-page-with-vanilla-js-scss-and-bem-j3_o-hMup)
 
 ## My process
 
