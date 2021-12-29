@@ -192,11 +192,31 @@ body {
   width: 65rem;
   margin: 0 auto 4rem auto;
   padding: 0 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(50%);
+  transition: all 0.7s;
+}
+.intro__img.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 @media (min-width: 1140px) {
   .intro__img {
     margin: 0;
   }
+}
+.intro__content {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: all 0.7s;
+}
+.intro__content.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 @media (min-width: 1140px) {
   .intro__content {
@@ -241,11 +261,31 @@ body {
   width: 55rem;
   margin: 0 auto 8rem auto;
   padding: 0 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(50%);
+  transition: all 0.7s;
+}
+.productive__img.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 @media (min-width: 1140px) {
   .productive__img {
     margin: 0 auto 2rem auto;
   }
+}
+.productive__content {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: all 0.7s;
+}
+.productive__content.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 .productive__text {
   max-width: 54rem;
@@ -349,6 +389,17 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+}
+.access__content {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: all 0.7s;
+}
+.access__content.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 @media (min-width: 1140px) {
   .access__content {
@@ -544,6 +595,15 @@ body {
 .access__form {
   width: 80%;
   margin: 2rem auto 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(50%);
+  transition: all 0.7s;
+}
+.access__form.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 @media (min-width: 1140px) {
   .access__form {
